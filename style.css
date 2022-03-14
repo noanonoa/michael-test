@@ -30,10 +30,31 @@ body {
   transform: translate(-50%, -50%);
 }
 
+
+
+
 .child-one{
   background-color: violet;
+  width: 200px;
+  height: 200px;
 }
 
 .child-two{
   background-color: turquoise;
+  width: 200px;
+  height: 200px;
+  /*
+  * notice what "fixed" has done to this element.
+  * it took it out of the html document flow.  
+  * .child-one and .child-two continue to follow each other as part of the document flow.
+  */
+  position: fixed;
+  top: 100px;
+  left: 100px;
+}
+
+.child-three{
+  background-color: orange;
+  width: 200px;
+  height: 200px;
 }
