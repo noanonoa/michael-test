@@ -16,6 +16,18 @@ body {
 
 #parent-div{
   background-color: maroon;
+  width: 800px;
+  height: 500px;
+  /*
+  * this is one way to center an element (layout)
+  * position: absolute - takes the parent-div element out of the HTML document flow.
+  * top, left: 50% - moves the top, left edge away from the top by 50%.  note these properties work because position has been set to absolute.
+  * translate(X,Y) - this calibrates the element's point of reference.  default is top-left corner of element and this property allows you to change that.  this is necessary to perfectly center an element.
+  */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .child-one{
