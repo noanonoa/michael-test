@@ -1,3 +1,27 @@
-p {
-  background-color: dodgerblue;
+/*
+* html, body
+* the following properties are a good place to start playing with CSS
+*/
+html, body {
+  margin: 0; /*reset default value*/
+  padding: 0; /*reset default value*/
+  height: 100%; /*make elements' height always the size of browser window*/
+  width: 100%; /*make elements' width always the size of browser window*/
+  box-sizing: border-box; /*make size of each "box" the outside edge of its border */
+}
+
+body {
+  border: 4px solid blue;
+}
+
+#parent-div{
+  background-color: maroon;
+}
+
+.child-one{
+  background-color: violet;
+}
+
+.child-two{
+  background-color: turquoise;
 }
